@@ -1,0 +1,15 @@
+{
+  "name": "flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "typecheck": "flow"
+  },
+  "keywords": [],
+  "author": "kanatapple <edamame1224@gmail.com> (Yasunari Fujieda)",
+  "license": "MIT",
+  "dependencies": {
+    "flow-bin": "^0.37.4"
+  }
+}
