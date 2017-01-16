@@ -1,0 +1,15 @@
+{
+  "name": "babel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kanatapple <edamame1224@gmail.com> (Yasunari Fujieda)",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.18.0"
+  }
+}
