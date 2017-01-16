@@ -23,7 +23,7 @@ Flow は JavaScript を実行する前に一般的なバグを見つけてくれ
 - null 参照
 - undefined な関数の呼び出し
 
-```js
+```javascript
 // @flow
 function foo(x) {
   return x * 10;
@@ -32,3 +32,33 @@ foo('Hello, world!');
 ```
 
 Flow の型注釈の付いた JavaScript コードは簡単に一般的な JavaScript に変換できるので、どこでも動作する
+
+下記のようなコードは Flow ではエラーになるが、実行は可能
+
+```javascript
+/* @flow */
+var str: number = 'hello world!';
+console.log(str);
+```
+
+Flow の結果
+
+```bash
+src/sample.js:3
+  3: var str: number = 'hello world!';
+                       ^^^^^^^^^^^^^^ string. This type is incompatible with
+  3: var str: number = 'hello world!';
+              ^^^^^^ number
+```
+
+実行結果
+
+```bash
+$ babel-node src/sample.js
+hello world!
+```
+
+このように Flow は実行を妨げる訳ではない
+タイプエラーがある時はプロジェクトを公開しない方がいいが、  
+開発時には普通にコードを実行でき、完全なタイプチェックはデバッグやテストの時に行えばよい
+Flow はこのように設計されていて、開発中の必要な時にしか干渉しない

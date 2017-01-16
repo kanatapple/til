@@ -10,6 +10,8 @@
   "author": "kanatapple <edamame1224@gmail.com> (Yasunari Fujieda)",
   "license": "MIT",
   "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-flow-strip-types": "^6.21.0",
     "flow-bin": "^0.37.4"
   }
 }
