@@ -1,4 +1,9 @@
 .idea/
 */node_modules/
 
+Rust/target/
+
+*.exe
+*.pdb
+*.lock
 npm-debug.log
