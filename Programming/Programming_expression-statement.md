@@ -108,7 +108,7 @@ var read = function() {
 つまり、次のように置き換えても同じといえるため、末尾にセミコロンが必要
 
 ```javascript
-function fn {}
+function fn() {}
  
 // fn(式)の評価値を代入する変数宣言の文
 var read = fn;
