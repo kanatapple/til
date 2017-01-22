@@ -1,7 +1,7 @@
 # 自動セミコロン挿入
 
 http://www.ecma-international.org/ecma-262/7.0/index.html#sec-automatic-semicolon-insertion
-http://blog.tai2.net/automatic_semilocon_insertion.html#sf-automatic_semilocon_insertion-4
+http://blog.tai2.net/automatic_semilocon_insertion.html
 
 自動セミコロン挿入とは
 1. 次の条件を満たすとき、プログラムが文法的に許可されないトークンを含むならば、セミコロンが挿入される。 
