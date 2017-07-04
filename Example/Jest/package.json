@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "update": "jest --updateSnapshot"
   },
   "keywords": [],
   "author": "kanatapple <edamame1224@gmail.com> (Yasunari Fujieda)",
   "license": "MIT",
   "dependencies": {
-    "jest": "^20.0.4"
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^20.0.4",
+    "react": "^15.6.1",
+    "react-test-renderer": "^15.6.1"
+  },
+  "babel": {
+    "presets": ["env", "react"]
   }
 }
