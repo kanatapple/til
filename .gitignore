@@ -3,7 +3,7 @@
 node_modules/
 __snapshots__/
 
-Example/Rust/target/
+Example/Rust/**/target/
 
 *.exe
 *.pdb
