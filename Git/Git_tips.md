@@ -56,3 +56,14 @@ git branch -m <古いブランチ名> <新しいブランチ名>
 ```sh
 git branch -m <新しいブランチ名>
 ```
+
+## 過去のcommitのAuthorとメールアドレスを変更する
+
+```sh
+git filter-branch -f --env-filter \
+  "GIT_AUTHOR_NAME='<new name>'; \
+   GIT_AUTHOR_EMAIL='<new email>'; \
+   GIT_COMMITTER_NAME='<new name>'; \
+   GIT_COMMITTER_EMAIL='<new email>';" \
+  <対象コミットリスト>
+```
