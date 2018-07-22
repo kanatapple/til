@@ -15,3 +15,16 @@ rustc 1.14.0 (e8a012324 2016-12-16)
 ```
 
 Windows 環境では C++ build tools for Visual Studio 2013+ も追加で必要
+
+## バージョンアップ
+
+```bash
+rustup update
+```
+
+## ローカルドキュメント
+
+```bash
+rustup doc
+```
+
