@@ -77,3 +77,39 @@ reset前のコミットはORIG_HEADという名前で参照できる
 git reset --hard ORIG_HEAD
 ```
 
+## git の add を取り消す
+
+```sh
+git reset HEAD sample.txt
+```
+
+## Squash and Merge
+1つのコミットにまとめてマージされる
+
+```
+Test (#1)  …
+
+@kanatapple
+kanatapple committed 11 minutes ago
+* add a.txt
+
+* fixup! add a.txt
+
+* b.txt
+
+* fixup! b.txt
+```
+
+## Rebase and Merge
+baseブランチに続けてコミットが並ぶようにマージされる
+
+```
+fixup! add c.txt
+yasunari-fujieda authored and kanatapple committed 3 minutes ago
+ 
+add c.txt
+yasunari-fujieda authored and kanatapple committed 3 minutes ago
+ 
+Test (#1)  …
+kanatapple committed 12 minutes ago
+```
