@@ -67,3 +67,13 @@ git filter-branch -f --env-filter \
    GIT_COMMITTER_EMAIL='<new email>';" \
   <対象コミットリスト>
 ```
+
+## reset
+
+reset前のコミットはORIG_HEADという名前で参照できる  
+間違えてresetした場合、ORIG_HEADにresetすると元の状態に戻せる
+
+```sh
+git reset --hard ORIG_HEAD
+```
+
